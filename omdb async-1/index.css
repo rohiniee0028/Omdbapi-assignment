@@ -1,0 +1,154 @@
+body{
+    background-color: #22232b;
+    font-family: "Roboto","HelveticaNeue-Light",sans-serif;
+}
+#navbar{
+    display:flex;
+    background-color:#22232b; ;
+    color:white;
+    border-bottom: 1px solid black;
+    
+}
+#navbar>div:nth-child(1)>h1{
+    margin-left: 20px;
+}
+#searchbox{
+    margin:auto;
+    display:flex;
+    margin-right: -10px;
+}
+#Search{
+   height:30px;
+   width:250px;
+   margin:auto;
+   outline: none;
+   background-color: #22232b;
+   border:none;
+   border-bottom: 1px solid aliceblue;
+   font-size: 18px;
+   font-weight: bold;
+   color:aliceblue;
+}
+#Search:focus{
+    width:400px;
+}
+#btn{
+    width:90px;
+    height:30px;
+    color:white;
+    margin-top: 15px;
+    background-color: rgb(20, 117, 228);
+    padding:5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.fa-solid{
+    width:30px;
+    padding:7px;
+    display:flex;
+    /* background-color: #6666; */
+    position:fixed;
+    margin-left: -30px;
+    color:grey;
+}
+#logindiv{
+    width:200px;
+    display:flex;
+    margin-top:5px;
+    margin-left: 5px;
+    justify-content: space-evenly;
+}
+#login{
+    color:grey;
+}
+#container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+    /* margin-left: 40px; */
+}
+.box{
+    border:1px solid white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.type{
+    color:white;
+}
+.title{
+    color:aquamarine;
+}
+.year{
+    color:white;
+}
+.rating{
+    color:white;
+}
+.imgdiv{
+    width:100%;
+}
+.rec{
+    border-radius: 5px;
+    background-color: #6ac72c;
+    padding: 8px;
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+@media all and (min-width:500px) and (max-width:720px){
+    #Search{
+        height:30px;
+        width:150px;
+        margin:auto;
+        outline: none;
+        background-color: #22232b;
+     }
+     #navbar>div:nth-child(1)>h1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .fa-solid{
+        width:30px;
+        /* background-color: #6666; */
+        display:flex;
+        padding:7px;
+        position:fixed;
+    }  
+    #signdiv{
+        width:200px;
+        display:flex;
+        margin-top:10px;
+        margin-left: 40px;
+        justify-content: space-evenly;
+    } 
+}
+@media all and (min-width:80px) and (max-width:499px){
+    #Search{
+        height:30px;
+        width:200px;
+        margin:auto;
+        outline: none;
+        background-color: #22232b;
+     }
+    .fa-solid{
+        width:30px;
+        display:flex;
+        /* background-color: #6666; */
+        margin-top:30px;
+        padding:6px;
+    } 
+    #navbar>div:nth-child(1)>h1{
+        margin-left: 10px;
+        margin-right: 10px;
+    } 
+    #signdiv{
+        width:200px;
+        display:flex;
+        margin-top:10px;
+        margin-left: 40px;
+        justify-content: space-evenly;
+    } 
+}
